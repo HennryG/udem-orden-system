@@ -1,0 +1,11 @@
+﻿Sku,Name,Description,AvailableUnits,UnitPrice,Image
+WE001,Manzana Roja,Manzanas rojas frescas precio por Kg,200,0.30,manzana_roja.jpg
+WE002,Banana,Bananas maduras precio por Kg,150,0.25,banana.jpg
+WE003,Tomate Cherry,Tomates cherry orgánicos precio por Kg,100,0.45,tomate_cherry.jpg
+WE004,Pechuga de Pollo,Pechuga de pollo sin hueso precio por Kg,80,1.00,pechuga_pollo.jpg
+WE005,Lomo de Cerdo,Lomo de cerdo premium precio por Kg,60,1.20,lomo_cerdo.jpg
+WE006,Espinaca Fresca,Espinaca fresca precio por Kg,150,0.40,espinaca_fresca.jpg
+WE007,Zanahoria,Zanahorias orgánicas precio por Kg,180,0.35,zanahoria.jpg
+WE008,Limones,Limones frescos precio por Kg,200,0.50,limones.jpg
+WE009,Naranjas,Naranjas para jugo precio por Kg,150,0.40,naranjas.jpg
+WE010,Papas,Papas blancas precio por Kg,100,0.20,papas.jpg

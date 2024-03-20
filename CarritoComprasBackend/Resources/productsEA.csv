@@ -1,0 +1,11 @@
+﻿Sku,Name,Description,AvailableUnits,UnitPrice,Image
+EA001,Leche Entera 1L,Leche entera de vaca 1 litro,100,1.20,leche_entera_1l.jpg
+EA002,Pan de Trigo 500g,Pan integral de trigo 500 gramos,100,2.50,pan_trigo_500g.jpg
+EA003,Queso Fresco 250g,Queso fresco bajo en grasa 250 gramos,80,3.00,queso_fresco_250g.jpg
+EA004,Yogur Griego,Yogur estilo griego natural,180,0.80,yogur-griego.jpg
+EA005,Café Molido 500g,Café molido de tueste oscuro 500 gramos,120,5.50,cafe_molido_500g.jpg
+EA006,Arroz Integral 1Kg,Arroz integral de grano largo 1 kilogramo,150,1.10,arroz_integral_1kg.jpg
+EA007,Pasta de Trigo 500g,Pasta de trigo integral 500 gramos,200,2.20,pasta_trigo_500g.jpg
+EA008,Aceite de Oliva 750ml,Aceite de oliva extra virgen 750 ml,100,6.50,aceite_oliva_750ml.jpg
+EA009,Salsa de Tomate 300g,Salsa de tomate casera 300 gramos,90,1.80,salsa_tomate_300g.jpg
+EA010,Chocolate Negro 100g,Chocolate negro 70% cacao 100 gramos,200,2.00,chocolate_negro_100g.jpg

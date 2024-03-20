@@ -1,0 +1,11 @@
+﻿Sku,Name,Description,AvailableUnits,UnitPrice,Image
+SP001,Galletas de Avena,Galletas de avena caseras,150,1.50,galletas_avena.jpg
+SP002,Mermelada de Fresa,Mermelada de fresa artesanal,80,2.80,mermelada_fresa.jpg
+SP003,Café Especial,Café especial de origen único,60,7.00,cafe_especial.jpg
+SP004,Té Verde,Té verde orgánico,120,3.20,te_verde.jpg
+SP005,Chocolate Artesanal,Chocolate artesanal con nueces,90,4.50,chocolate_artesanal.jpg
+SP006,Vino Tinto,Vino tinto reserva especial,50,12.00,vino_tinto.jpg
+SP007,Aceitunas Rellenas,Aceitunas rellenas de pimiento,100,3.00,aceitunas_rellenas.jpg
+SP008,Queso Azul,Queso azul de calidad premium,70,5.00,queso_azul.jpg
+SP009,Jamón Ibérico,Jamón ibérico de bellota,30,22.00,jamon_iberico.jpg
+SP010,Salmón Ahumado,Salmón ahumado en frío,40,9.00,salmon_ahumado.jpg

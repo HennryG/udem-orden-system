@@ -1,0 +1,12 @@
+.github
+BusinessRules/bin/
+BusinessRules/obj/
+CarritoComprasBackend/bin/
+CarritoComprasBackend/obj/
+CarritoComprasBackend/.vs/
+carrito-compras-frontend/build/
+carrito-compras-frontend/node_modules/
+DataRepository/bin/
+DataRepository/obj/
+Services/bin/
+Services/obj/
