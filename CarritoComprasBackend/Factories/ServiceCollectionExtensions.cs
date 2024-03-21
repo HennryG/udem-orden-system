@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using DataRepository.Repositories;
 using Services.Domain.Services;
+using ValidationFactory;
 
 namespace ShoppingCartBackEnd.Factories
 {
@@ -71,6 +72,12 @@ namespace ShoppingCartBackEnd.Factories
                 var configuration = serviceProvider.GetRequiredService<IConfiguration>();
                 return new SessionService(mapper, configuration, sessionRepository);
             });
+            return services;
+        }
+
+        public static IServiceCollection AddValidationChainService(this IServiceCollection services)
+        {
+            services.AddSingleton<ICreatorFactory, ConcreteChainCreator>();
             return services;
         }
     }

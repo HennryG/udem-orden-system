@@ -2,6 +2,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Services.Domain.Services;
 using ShoppingCartBackEnd.Entities.Models.InputModels;
+using ValidationFactory;
+using Validations.Interface;
+using Validations;
+using Validations.Model;
 
 namespace CarritoComprasBackend.Controllers
 {
@@ -12,8 +16,9 @@ namespace CarritoComprasBackend.Controllers
     {
         private readonly ILogger<StoreController> _logger;
         private readonly StoreService _storeService;
+        private readonly ICreatorFactory _creatorFactory;
 
-        public StoreController(ILogger<StoreController> logger, StoreService storeFactory)
+        public StoreController(ILogger<StoreController> logger, StoreService storeFactory, ICreatorFactory creatorFactory)
         {
             this._logger = logger;
             this._storeService = storeFactory;          
@@ -155,12 +160,34 @@ namespace CarritoComprasBackend.Controllers
             try
             {
                 result = await _storeService.CompleteshoppingCart(IdUser);
-                return Ok();
+                var request = ExecuteValidations();
+                return Ok(request);
             }
             catch (Exception ex)
             {
                 return StatusCode(500, $"An error occurred: {ex.Message}");
             }
+        }
+
+        private Request ExecuteValidations()
+        {
+            IHandler handlerChain = _creatorFactory.CreateChain();
+
+            var request = InMemoryRequestRepository.Instance.GetFirstRequest();
+
+            while (request.RecoveryNextHandlerName != "The Process is Finished")
+            {
+                var validationMapEntry = request.ValidationMaps.FirstOrDefault(x => x.ValidationName == request.RecoveryNextHandlerName);
+
+                if (validationMapEntry != null)
+                {
+                    validationMapEntry.CreationDate = DateTime.Now;
+                    validationMapEntry.State = true;
+
+                }
+                handlerChain.Handle(request);
+            }
+            return request;
         }
 
         [HttpGet("/Store/GetTotalSales", Name = "GetTotalSales")]
@@ -176,5 +203,6 @@ namespace CarritoComprasBackend.Controllers
                 return StatusCode(500, $"An error occurred: {ex.Message}");
             }
         }
+
     }
 }

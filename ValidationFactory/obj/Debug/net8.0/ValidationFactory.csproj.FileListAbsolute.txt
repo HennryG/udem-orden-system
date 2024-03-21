@@ -1,0 +1,16 @@
+D:\GitHub\Hennrygb\postgradoCarritoCompras\ValidationFactory\bin\Debug\net8.0\ValidationFactory.deps.json
+D:\GitHub\Hennrygb\postgradoCarritoCompras\ValidationFactory\bin\Debug\net8.0\ValidationFactory.dll
+D:\GitHub\Hennrygb\postgradoCarritoCompras\ValidationFactory\bin\Debug\net8.0\ValidationFactory.pdb
+D:\GitHub\Hennrygb\postgradoCarritoCompras\ValidationFactory\obj\Debug\net8.0\ValidationFactory.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\Hennrygb\postgradoCarritoCompras\ValidationFactory\obj\Debug\net8.0\ValidationFactory.AssemblyInfoInputs.cache
+D:\GitHub\Hennrygb\postgradoCarritoCompras\ValidationFactory\obj\Debug\net8.0\ValidationFactory.AssemblyInfo.cs
+D:\GitHub\Hennrygb\postgradoCarritoCompras\ValidationFactory\obj\Debug\net8.0\ValidationFactory.csproj.CoreCompileInputs.cache
+D:\GitHub\Hennrygb\postgradoCarritoCompras\ValidationFactory\obj\Debug\net8.0\ValidationFactory.sourcelink.json
+D:\GitHub\Hennrygb\postgradoCarritoCompras\ValidationFactory\obj\Debug\net8.0\ValidationFactory.dll
+D:\GitHub\Hennrygb\postgradoCarritoCompras\ValidationFactory\obj\Debug\net8.0\refint\ValidationFactory.dll
+D:\GitHub\Hennrygb\postgradoCarritoCompras\ValidationFactory\obj\Debug\net8.0\ValidationFactory.pdb
+D:\GitHub\Hennrygb\postgradoCarritoCompras\ValidationFactory\obj\Debug\net8.0\ref\ValidationFactory.dll
+D:\GitHub\Hennrygb\postgradoCarritoCompras\ValidationFactory\bin\Debug\net8.0\Validations.dll
+D:\GitHub\Hennrygb\postgradoCarritoCompras\ValidationFactory\bin\Debug\net8.0\Validations.pdb
+D:\GitHub\Hennrygb\postgradoCarritoCompras\ValidationFactory\obj\Debug\net8.0\ValidationFactory.csproj.AssemblyReference.cache
+D:\GitHub\Hennrygb\postgradoCarritoCompras\ValidationFactory\obj\Debug\net8.0\Validati.001EF6F1.Up2Date

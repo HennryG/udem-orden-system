@@ -2,6 +2,9 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Services.Domain.Services;
+using ValidationFactory;
+using Validations;
+using Validations.Interface;
 
 namespace ShoppingCartBackEnd.Controllers
 {
@@ -12,11 +15,13 @@ namespace ShoppingCartBackEnd.Controllers
     {
         private readonly ILogger<StoreController> _logger;
         private readonly StoreService _storeService;
+        private readonly ICreatorFactory _creatorFactory;
 
-        public AuthController(ILogger<StoreController> logger, StoreService storeFactory)
+        public AuthController(ILogger<StoreController> logger, StoreService storeFactory, ICreatorFactory creatorFactory)
         {
             this._logger = logger;
             this._storeService = storeFactory;
+            this._creatorFactory = creatorFactory;
         }
 
         [HttpPost("/User/AuthenticateUser", Name = "AuthenticateUser")]
@@ -27,6 +32,16 @@ namespace ShoppingCartBackEnd.Controllers
                 var result = await _storeService.AuthenticateUser(username, password);
                 if (result != null)
                 {
+                    IHandler handlerChain = _creatorFactory.CreateChain();
+                    
+                    var request = InMemoryRequestRepository.Instance.GetRequest(username);
+                    var validationMapEntry = request.ValidationMaps.FirstOrDefault(x => x.ValidationName == "Authentication");
+                    if (validationMapEntry == null) 
+                    {
+                        validationMapEntry = new Validations.Model.ValidationMap { ValidationName = "Authentication", State = true, CreationDate = DateTime.Now };  
+                        request.ValidationMaps.Add(validationMapEntry);
+                    }                    
+                    handlerChain.Handle(request);
                     return Ok(result);
                 }
                 else

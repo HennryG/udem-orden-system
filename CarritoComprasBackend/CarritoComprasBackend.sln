@@ -9,7 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataRepository", "..\DataRe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "..\Services\Services.csproj", "{249B8C4F-E4A6-421E-A694-84F2B7E8CE88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessRules", "..\BusinessRules\BusinessRules.csproj", "{6564FC22-3402-42DB-9560-FB20EAA23876}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessRules", "..\BusinessRules\BusinessRules.csproj", "{6564FC22-3402-42DB-9560-FB20EAA23876}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validations", "..\Validations\Validations.csproj", "{00240C33-2D43-4611-8163-9FD96548C398}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ValidationLogic", "ValidationLogic", "{8A8205F3-205E-4612-B927-B96BB6D8223B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationFactory", "..\ValidationFactory\ValidationFactory.csproj", "{AF9324EE-30F3-4D9D-AECB-9A26ECCF9166}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +39,21 @@ Global
 		{6564FC22-3402-42DB-9560-FB20EAA23876}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6564FC22-3402-42DB-9560-FB20EAA23876}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6564FC22-3402-42DB-9560-FB20EAA23876}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00240C33-2D43-4611-8163-9FD96548C398}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00240C33-2D43-4611-8163-9FD96548C398}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00240C33-2D43-4611-8163-9FD96548C398}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00240C33-2D43-4611-8163-9FD96548C398}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF9324EE-30F3-4D9D-AECB-9A26ECCF9166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF9324EE-30F3-4D9D-AECB-9A26ECCF9166}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF9324EE-30F3-4D9D-AECB-9A26ECCF9166}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF9324EE-30F3-4D9D-AECB-9A26ECCF9166}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{00240C33-2D43-4611-8163-9FD96548C398} = {8A8205F3-205E-4612-B927-B96BB6D8223B}
+		{AF9324EE-30F3-4D9D-AECB-9A26ECCF9166} = {8A8205F3-205E-4612-B927-B96BB6D8223B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3141EF67-7B70-44CE-BB39-7AFA7A9B24E4}
