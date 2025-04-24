@@ -10,3 +10,7 @@ DataRepository/bin/
 DataRepository/obj/
 Services/bin/
 Services/obj/
+ValidationFactory/bin/
+ValidationFactory/obj/
+Validations/bin/
+Validations/obj/
